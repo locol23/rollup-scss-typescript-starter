@@ -1,0 +1,8 @@
+@import './normalize.min';
+
+body {
+  min-width: 320px;
+  @media screen and (max-width: 400px) {
+    background-color: aqua;
+  }
+}
