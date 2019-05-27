@@ -11,7 +11,7 @@
     "rollup:prod": "rollup -c",
     "bs": "browser-sync start --server 'dist' --files='dist' --watchEvents 'add' 'change'",
     "dev": "run-s clean && run-p rollup:dev markup:dev bs",
-    "build": "run-s clean build:prod copy:prod"
+    "build": "run-s clean rollup:prod markup:prod"
   },
   "devDependencies": {
     "browser-sync": "^2.26.5",
